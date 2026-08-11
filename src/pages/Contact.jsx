@@ -93,7 +93,7 @@ const Contact = () => {
             </article>
             
             <article className="detail-card fade-up">
-              <div className="detail-icon"><i className="fas fa-phone-alt"></i></div>
+              <div className="detail-icon"><i className="fas fa-phone-alt" style={{ transform: 'scaleX(-1)' }}></i></div>
               <h3>Call Us</h3>
               <p><a href="tel:+919876543210">+91 98765 43210</a><br/><a href="tel:+912942410219">0294-2410219 (Tourist Info)</a></p>
               <div className="detail-bar"></div>

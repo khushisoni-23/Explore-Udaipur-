@@ -207,7 +207,7 @@ nav ul li a.active::after { width: 100%; }
 .about-hero {
   position: relative;
   min-height: 100vh;
-  background-image: url('/img.5.5.png');
+  background-image: url('/about-hero.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

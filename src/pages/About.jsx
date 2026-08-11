@@ -91,13 +91,13 @@ const About = () => {
           </div>
           <div className="intro-images">
             <div className="iimg iimg-tall">
-              <img src="/img1.1.jpeg" alt="Udaipur lake and palace panorama" loading="lazy" />
+              <img src="udr.22.jpeg" loading="lazy" />
             </div>
             <div className="iimg iimg-short">
-              <img src="/img2.2.jpeg" alt="Udaipur heritage architecture" loading="lazy" />
+              <img src="udr.1.jpeg" loading="lazy" />
             </div>
             <div className="iimg iimg-short iimg-offset">
-              <img src="/lake.jpeg" alt="Lake Pichola Udaipur" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1715405155995-61757307e065?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHVkYWlwdXJ8ZW58MHx8MHx8fDA%3D" alt="Lake Pichola Udaipur" loading="lazy" />
             </div>
           </div>
         </section>

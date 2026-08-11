@@ -4,122 +4,117 @@ import '../styles/gallery.css';
 
 const galleryImages = [
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_10.54.45_AM-5ca815dd-72e7-4001-8121-058dc19022b8.png',
+    src: 'udr.1.jpeg',
     category: 'palaces',
-    title: 'City Palace'
   },
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_10.55.03_AM-35b64acb-0653-49c8-8a90-9cf4f59865e4.png',
+    src: '/udr.2.jpeg',
     category: 'lakes',
-    title: 'Lake Pichola'
+   
   },
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_10.56.47_AM-699986cb-562e-49e9-81b7-bc892feca5b1.png',
+    src: '/jagdish temple udaipur.jpeg',
     category: 'temples',
     title: 'Jagdish Temple'
   },
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_10.59.00_AM-a540c65a-325d-4cc1-b07e-90b2035042af.png',
+    src: 'udr.3.jpeg',
     category: 'heritage',
     title: 'Heritage Walk'
   },
+ 
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_11.37.55_AM-d3f9a479-9cce-4461-8a2d-3c780abc336b.png',
-    category: 'nature',
-    title: 'Monsoon Palace'
-  },
-  {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_11.38.29_AM-cc511671-be58-4a3e-9009-c1ba42802d66.png',
+    src: '/gallery-custom-5.jpg',
     category: 'sunset',
     title: 'Sunset View'
   },
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_11.38.54_AM-c7c0fcc7-ed6b-4fe8-a92a-67cdea2b88d4.png',
+    src:'udr.4.jpeg',
     category: 'palaces',
     title: 'Lake Palace'
   },
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_11.39.19_AM-ee61fc9a-8839-459b-8b0e-8d1caa297cae.png',
+    src: '/gallery-custom-7.jpg',
     category: 'lakes',
     title: 'Fateh Sagar'
   },
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_11.40.00_AM-2732dadd-546d-4d4f-b935-0521284ae427.png',
+    src: 'udr.6.jpeg',
     category: 'temples',
     title: 'Eklingji Temple'
   },
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_11.40.19_AM-51e89389-60bf-497b-9b3d-adb6914711d8.png',
+    src: '/img2.2.jpeg',
     category: 'heritage',
     title: 'Old City'
   },
   {
-    src: '/gallery-images/image-0c76ff67-5b46-429b-8cf9-7cc91acc36cd.png',
+    src: 'udr.7.jpeg',
     category: 'nature',
     title: 'Sajjangarh'
   },
   {
-    src: '/gallery-images/image-0ed2645e-1f8e-4360-a51d-007a74ce68d2.png',
+    src: 'udr.8.jpeg',
     category: 'sunset',
     title: 'Golden Hour'
   },
   {
-    src: '/gallery-images/image-268461e8-72a4-44cd-945f-1e4d23d964e8.png',
+    src: '/img1.1.jpeg',
     category: 'palaces',
     title: 'City Palace View'
   },
   {
-    src: '/gallery-images/image-2b4ac175-b0e8-40fe-b741-47b1a5284839.png',
+    src: '/lake.jpeg',
     category: 'lakes',
     title: 'Boat Ride'
   },
   {
-    src: '/gallery-images/image-626b7bf8-c058-440d-9f35-71b2fb654a6b.png',
+    src: '/udr.9.jpeg',
     category: 'temples',
     title: 'Temple Architecture'
   },
   {
-    src: '/gallery-images/image-6637ddef-d517-4a32-a67c-d8d6b37b1419.png',
+    src: 'udr.10.jpeg',
     category: 'heritage',
     title: 'Haveli'
   },
   {
-    src: '/gallery-images/image-9c5a36a9-32da-454e-a1e2-bb5ce10944c6.png',
+    src: 'udr.11.jpeg',
     category: 'nature',
     title: 'Greenery'
   },
   {
-    src: '/gallery-images/image-aa353224-7d44-4072-b36e-284673567431.png',
+    src: '/gallery-custom-17.jpg',
     category: 'sunset',
     title: 'Lake Sunset'
   },
   {
-    src: '/gallery-images/image-babda508-5d8b-4e4f-af7a-d73c5d83fb27.png',
+    src: 'udr.13.jpeg',
     category: 'palaces',
     title: 'Palace Detail'
   },
   {
-    src: '/gallery-images/image-cb894b6a-45d5-4c56-9f6e-7a559cf4ba11.png',
+    src: 'udr.14.jpeg',
     category: 'lakes',
     title: 'Lake Reflection'
   },
   {
-    src: '/gallery-images/image-eb41340b-22eb-4ffa-9fa0-681134792fd1.png',
+    src: 'udr.20.jpeg',
     category: 'temples',
     title: 'Sacred Temple'
   },
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_10.14.32_AM-fb299a29-a20d-4098-8dc9-31fb493c45bb.png',
+    src: 'udr.16.jpeg',
     category: 'heritage',
     title: 'Street View'
   },
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_10.14.52_AM-6ecf817c-c735-48b9-9a43-5abd0f2d0f9d.png',
+    src: 'udr.17.jpeg',
     category: 'nature',
     title: 'Hill View'
   },
   {
-    src: '/gallery-images/WhatsApp_Image_2026-08-01_at_10.56.47_AM-699986cb-562e-49e9-81b7-bc892feca5b1.png',
+    src: 'udr.18.jpeg ',
     category: 'sunset',
     title: 'Evening Glow'
   }
