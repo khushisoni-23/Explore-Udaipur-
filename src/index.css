@@ -1,0 +1,40 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Import FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* CSS Variables from original website */
+:root {
+  --bg-color: #fbf9f4;
+  --primary: #0b1a30;
+  --accent: #c59b27;
+  --accent-dark: #a07c18;
+  --accent-light: #fef8eb;
+  --text: #1a1a1a;
+  --text-secondary: #555555;
+  --white: #ffffff;
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-color);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}

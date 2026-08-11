@@ -1,0 +1,300 @@
+/* ===================================================
+   SHARED EXPLORE UDAIPUR STYLES (Header, Footer, Typography)
+   =================================================== */
+/* ===== RESET ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-color);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ===================================================
+   HEADER & NAVIGATION
+   =================================================== */
+#mainHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 2000;
+  transition: all 0.35s ease;
+  background: rgba(250, 246, 240, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(212, 160, 23, 0.1);
+}
+
+#mainHeader.scrolled {
+  padding: 10px 4%;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 4px 24px rgba(15, 35, 68, 0.09);
+  border-bottom: 1px solid rgba(212, 160, 23, 0.15);
+}
+
+/* Logo */
+#mainHeader .logo {
+  position: relative;
+  z-index: 1;
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--primary);
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+#mainHeader .logo span { color: var(--accent); }
+
+/* Desktop Nav */
+#mainHeader nav {
+  position: relative;
+  z-index: 1;
+  display: block;
+  flex: 1;
+}
+#mainHeader nav ul {
+  display: flex;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+#mainHeader nav ul li a {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  position: relative;
+  padding: 6px 10px;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+#mainHeader nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: calc(100% - 8px);
+  height: 2px;
+  background: var(--accent);
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+#mainHeader nav ul li a:hover,
+#mainHeader nav ul li a.active {
+  color: var(--accent);
+}
+#mainHeader nav ul li a:hover::after,
+#mainHeader nav ul li a.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Plan Your Trip Button */
+.nav-btn, #mainHeader .nav-btn {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: var(--primary);
+  color: #fff !important;
+  padding: 9px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.nav-btn:hover, #mainHeader .nav-btn:hover {
+  background: var(--accent);
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(212, 160, 23, 0.3);
+}
+
+#hamburger {
+  display: none;
+  position: relative;
+  z-index: 1;
+  font-size: 1.3rem;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+
+.mobile-nav {
+  position: fixed;
+  top: 0; right: -100%;
+  width: 280px; height: 100%;
+  background: #0f2344;
+  color: #fff;
+  padding: 60px 28px;
+  transition: right 0.4s ease;
+  z-index: 3000;
+}
+.mobile-nav.open { right: 0; }
+.mobile-nav ul { list-style: none; margin: 36px 0 0; padding: 0;}
+.mobile-nav li { margin-bottom: 22px; }
+.mobile-nav a { color: rgba(255,255,255,0.9); font-size: 1.05rem; font-weight: 500; }
+.mobile-nav a:hover, .mobile-nav a.active { color: var(--accent); }
+.nav-btn-mobile {
+  display: inline-flex;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: #fff !important;
+  padding: 12px 20px;
+  border-radius: 999px;
+}
+.close-mobile {
+  position: absolute;
+  top: 24px; right: 24px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* ===================================================
+   SHARED SECTION UTILITIES
+   =================================================== */
+main { margin-top: 0; }
+.section { padding: 90px 6%; }
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.section-h2-centered, h2.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  color: var(--primary);
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.fade-up.revealed { opacity: 1; transform: translateY(0); }
+
+/* ===================================================
+   FOOTER
+   =================================================== */
+#footer { background: var(--primary); padding-top: 0;}
+#footer .footer-top {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.9fr;
+  gap: 38px;
+  padding: 80px 6% 28px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#footer .footer-logo {
+  display: inline-flex;
+  font-family: 'Cinzel', serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+#footer .footer-logo span { color: var(--accent); }
+#footer .footer-brand p {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.88rem;
+  line-height: 1.8;
+  max-width: 320px;
+  margin-bottom: 22px;
+}
+#footer .footer-socials { display: flex; gap: 12px; }
+#footer .footer-socials a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid rgba(212,160,23,0.3);
+  color: rgba(255,255,255,0.65);
+  font-size: 0.9rem; transition: var(--transition);
+}
+#footer .footer-socials a:hover {
+  background: var(--accent); border-color: var(--accent);
+  color: #fff; transform: translateY(-3px);
+}
+#footer .footer-links h4, #footer .footer-contact h4 {
+  font-family: 'Cinzel', serif; font-size: 1rem;
+  color: var(--accent); letter-spacing: 0.05em; margin-bottom: 20px;
+}
+#footer .footer-links ul { list-style: none; padding: 0; margin: 0; }
+#footer .footer-links li { margin-bottom: 14px; }
+#footer .footer-links a {
+  color: rgba(255,255,255,0.55); font-size: 0.9rem;
+  display: flex; align-items: center; gap: 8px; transition: var(--transition);
+}
+#footer .footer-links a i { font-size: 0.65rem; color: var(--accent); }
+#footer .footer-links a:hover { color: var(--accent); padding-left: 4px; }
+#footer .footer-contact p {
+  color: rgba(255,255,255,0.55); font-size: 0.88rem; margin-bottom: 14px;
+  display: flex; align-items: flex-start; gap: 10px; line-height: 1.55;
+}
+#footer .footer-contact i { color: var(--accent); margin-top: 2px; }
+#footer .footer-bottom {
+  border-top: 1px solid rgba(212,160,23,0.12);
+  padding: 24px 6% 40px; text-align: center;
+  color: rgba(255,255,255,0.4); font-size: 0.87rem;
+}
+#footer .footer-bottom strong { color: var(--accent); }
+.heart { color: #e74c3c; display: inline-block; animation: heartbeat 1.5s ease-in-out infinite; }
+@keyframes heartbeat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.25); } }
+
+/* ===================================================
+   RESPONSIVE DESIGN (Header & Footer)
+   =================================================== */
+@media (max-width: 1024px) {
+  #footer .footer-top { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  #mainHeader nav { display: none; }
+  #mainHeader .nav-btn { display: none; }
+  #hamburger { display: block; }
+  
+  #mainHeader .logo { font-size: 1.25rem; }
+  #mainHeader { padding: 16px 6%; }
+  
+  #footer .footer-top { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  #footer .footer-brand p { margin: 0 auto 20px; }
+  #footer .footer-socials { justify-content: center; }
+  #footer .footer-links a { justify-content: center; }
+  #footer .footer-contact p { justify-content: center; }
+}
