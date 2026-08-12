@@ -10,6 +10,7 @@ import Food from './pages/Food';
 import Culture from './pages/Culture';
 import HiddenGems from './pages/HiddenGems';
 import Gallery from './pages/Gallery';
+import Videos from './pages/Videos';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
@@ -54,6 +55,7 @@ function App() {
           <Route path="/hidden%20gems.html" element={<HiddenGems />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/gallery.html" element={<Gallery />} />
+          <Route path="/videos" element={<Videos />} />
           <Route path="/about" element={<About />} />
           <Route path="/about.html" element={<About />} />
           <Route path="/contact" element={<Contact />} />

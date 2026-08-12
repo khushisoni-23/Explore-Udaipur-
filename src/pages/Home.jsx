@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/home.css';
 
 const Home = () => {
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   useEffect(() => {
     // Floating particles
@@ -101,24 +100,6 @@ const Home = () => {
     };
   }, []);
 
-  // Handle Escape key for modal
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "Escape") setIsVideoModalOpen(false);
-    };
-    if (isVideoModalOpen) {
-      document.body.style.overflow = "hidden";
-      document.addEventListener("keydown", handleKeyDown);
-    } else {
-      document.body.style.overflow = "";
-      document.removeEventListener("keydown", handleKeyDown);
-    }
-    return () => {
-      document.body.style.overflow = "";
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [isVideoModalOpen]);
-
   return (
     <>
       <div id="particles-container"></div>
@@ -158,9 +139,9 @@ const Home = () => {
             <Link to="/places" className="btn-primary">
               <i className="fas fa-compass"></i> Explore Places
             </Link>
-            <button className="btn-secondary" id="watchBtn" onClick={() => setIsVideoModalOpen(true)}>
+            <Link to="/videos" className="btn-secondary" id="watchBtn">
               <i className="fas fa-play"></i> Watch Video
-            </button>
+            </Link>
           </div>
 
           <div className="scroll-indicator">
@@ -169,20 +150,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {isVideoModalOpen && (
-        <div id="videoModal" className="modal open" onClick={(e) => {
-          if (e.target.className.includes("modal")) setIsVideoModalOpen(false);
-        }}>
-          <div className="modal-content">
-            <span className="close" id="closeModal" onClick={() => setIsVideoModalOpen(false)}>&times;</span>
-            <iframe id="videoFrame"
-              src="https://www.youtube.com/embed/dvWbJvNrM1U"
-              allowFullScreen>
-            </iframe>
-          </div>
-        </div>
-      )}
     </>
   );
 };

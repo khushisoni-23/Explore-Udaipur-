@@ -48,6 +48,7 @@ const Navbar = () => {
     { name: 'Culture', path: '/culture' },
     { name: 'Hidden Gems', path: '/hidden-gems' },
     { name: 'Gallery', path: '/gallery' },
+    { name: 'Videos', path: '/videos' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' }
   ];
